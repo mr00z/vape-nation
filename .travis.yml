@@ -1,3 +1,4 @@
+languague: bash
 sudo: required
 
 services:
