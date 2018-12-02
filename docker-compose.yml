@@ -1,0 +1,28 @@
+web:
+  image: wordpress
+  links:
+    - db:mysql
+  ports:
+    - "8080:80"
+  volumes:
+    - /home/vaper/vape-nation/wordpress/wp-content:/var/www/html/wp-content
+  environment:
+    WORDPRESS_DB_PASSWORD: SuperSecretPassword
+    WORDPRESS_DB_NAME: wordpress
+db:
+  image: mariadb
+  ports:
+    - "3306:3306"
+  volumes: 
+    - /datadrive/wordmysqldata:/var/lib/mysql
+  environment:
+    MYSQL_ROOT_PASSWORD: SuperSecretPassword
+postgresdb:
+  image: postgres:11.0-alpine
+  ports:
+    - "5432:5432"
+  volumes:
+    - /datadrive/postgresdata:/var/lib/postgresql/data
+  environment:
+    POSTGRES_PASSWORD: docker
+    POSTGRES_USER: docker
