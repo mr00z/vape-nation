@@ -1,12 +1,11 @@
-languague: bash
 sudo: required
 
 services:
  - docker
 
-before_install:
+before_script:
 - sudo /etc/init.d/mysql stop
 - sudo /etc/init.d/postgresql stop
 
-install:
+script:
  - docker-compose up -d
