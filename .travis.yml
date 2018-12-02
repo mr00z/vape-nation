@@ -3,9 +3,12 @@ sudo: required
 services:
  - docker
 
+notifications:
+  email: false
+
 before_script:
 - sudo /etc/init.d/mysql stop
 - sudo /etc/init.d/postgresql stop
 
 script:
- - docker-compose up -d
+ - sudo docker-compose up -d
