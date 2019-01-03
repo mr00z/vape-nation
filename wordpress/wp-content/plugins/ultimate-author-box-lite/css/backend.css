@@ -1,0 +1,1111 @@
+
+*{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.ui-widget-overlay {
+    background: #666;
+    opacity: .6;
+}
+.uap-social-outlets-fields{
+    border: 1px solid silver;
+}
+.uap-social-outlets-fields li{
+    background: #e5e5e5;
+    margin: 5px;
+    /*padding: 10px;*/
+    cursor: move;
+}
+
+/*----------------------
+reset backend css start
+-----------------------*/
+.uab-frontend-wrapper *{
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.uab-frontend-wrapper{
+	line-height:1;
+}
+.uab-frontend-editor{
+	line-height:inherit;
+}
+.uab-clearfix:before,
+.uab-clearfix:after {
+  content:"";
+  display:table;
+  clear:both;
+}
+.uab-clearfix {
+  zoom:1;
+}
+/*---------------------
+reset backend css end
+----------------------*/
+/*----------------------
+uab heading design
+------------------------*/
+.uab-settings-header-wrapper-main{
+	padding:0 15px 0px;
+}
+.uab-settings-header-wrapper-main-wrap{
+	background:#22a3a9;
+	padding: 20px 29px 20px;
+	color:#fff;
+	border-bottom:7px solid #ff7a77;
+}
+.uab-settings-header-wrapper-main-wrap .uab-settings-header-title{
+	float:left;
+}
+.uab-header-social-link{
+	float:right;
+}
+.uab-header-social-link iframe{
+	display:block;
+	margin-top:5px;
+	height:20px;
+}
+.uab-header-social-link iframe table{
+	float:right;
+}
+.uab-header-social-link p{
+	margin:0 0 5px 0 ;
+}
+.uab-settings-header-wrapper-main-wrap .uab-settings-header-title .uab-title-menu{
+	font-size:30px;
+	text-transform:uppercase;
+	margin:10px 0;
+	line-height:1;
+}
+/*------------------------
+-------------------------*/
+/*----------------------
+Tabs
+------------------------*/
+.uab-tabs-wrap{
+	width: 100%;
+    padding: 20px 20px 75px;
+    display: block;
+    background: #404040;
+    box-sizing: border-box;
+}
+.uab-container{
+    width: 100%;
+    margin: 0 auto;
+}
+.uab-setting-page-wrapper form{
+	clear:both;
+	width:100%;
+	background: #fff;
+	border: 1px solid #22a3a9;
+	border-top:0;
+}
+.uab-tab-content.current{
+	display:block;
+}
+ul.uab-tabs{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-align:center;
+}
+ul.uab-tabs li{
+	font-size: 13px;
+    position: relative;
+    padding:50px 20px 20px;
+    cursor: pointer;
+    display: block;
+    text-align:center;
+    background:transparent;
+    color:#fff;
+    display:inline-block;
+    margin-bottom:0;
+}
+ul.uab-tabs li:after{
+	position:absolute;
+	content:'';
+	left:50%;
+	bottom: -34px;
+	-webkit-transform:translateX(-50%);
+	transform:translateX(-50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 10px 14px 10px;
+	border-color: transparent transparent #fff transparent;
+	visibility:hidden;
+	opacity:0;
+}
+ul.uab-tabs li.current{
+	background:#525252;
+}
+ul.uab-tabs li.current:after{
+	visibility:visible;
+	opacity:1;
+}
+ul.uab-tabs li:before{
+	position: absolute;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+    left: 50%;
+    line-height: 37px;
+    top:7px;
+    -webkit-transform:translateX(-50%);
+    transform:translateX(-50%);
+    color: #fff;
+	font-size:23px;
+    text-align: center;
+    font-weight: 900;
+}
+.uab-general-setting-tab:before{
+	content: "\f013";
+}
+.uab-permission-setting-tab:before{
+	content: "\f085";
+}
+.uab-twitter-setting-tab:before{
+	content: "\f099";
+}
+.uab-layout-setting-tab:before{
+    content: "\f03a";
+}
+.uab-custom-setting-tab:before{
+	content: "\f121";
+}
+.uab-tab-content{
+	display:none;
+    background: #fff;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: -45px auto 0;
+    width:90%;
+    border:1px solid;
+    border-radius: 6px 6px 0 0;
+    border-color: #f1f1f1;
+}
+.uab_admin-general-bttn{
+	padding: 40px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+/*----------------------
+Tabs css end
+------------------------*/
+/*----------------------
+uab setting css start
+-----------------------*/
+.uab-general-settings-content-wrapper{
+	display:block;
+}
+.uab-general-settings-content-wrapper >div >label{
+	display:inline-block;
+}
+.uab-slide-checkbox-wrapper-inner{
+	position:relative;
+	display:inline-block;
+}
+.uab-slide-checkbox-wrapper-inner .uab-info{
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	opacity:0;
+	visibility:hidden;
+	left:120%;
+	-webkit-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+	white-space: nowrap;
+	background:#222;
+	color:#fff;
+	font-size:11px;
+	font-style:italic;
+	padding:5px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+.uab-slide-checkbox-wrapper-inner:hover .uab-info{
+	opacity:1;
+	visibility:visible;
+	left:115%;
+}
+.uab-slide-checkbox-wrapper-inner .uab-info:before{
+	content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 10px 6px 0;
+    border-color: transparent #222 transparent transparent;
+    right: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/**/
+.uab-content-wrapper{
+	position: relative;
+    margin: 20px 0;
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.uab-content-wrapper > div{
+	width:50%;
+	display:table-cell;
+	vertical-align:middle;
+}
+.uab-content-wrapper.uab-background  > div{
+	vertical-align:top;
+}
+.uab-permission-settings  .uab-content-wrapper > div{
+	vertical-align:top;
+}
+.uab-backend-description{
+	display:block;
+	font-size:20px;
+	font-weight:600;
+	padding:20px 0 20px 28px;
+}
+.uab-content-wrapper textarea{
+	resize: none;
+    width: 50%;
+    height: 100px;
+    border:1px solid #22a3a9;
+}
+.uab-label-info-wrap{
+	padding:0 30px;
+}
+.uab-label-info-wrap label{
+	line-height: 1.4;
+    padding-right: 30px;
+    vertical-align: top;
+    font-size: 15px;
+    font-weight:700;
+    display:block;
+}
+.uab-label-info-wrap span{
+	display:block;
+	margin: 2px 0 5px;
+    color: #666;
+    font-weight: normal;
+    font-size: 12px;
+}
+.uab-tab-content  .uab-settings-header-wrapper h3{
+	margin:0;
+	background:#22a3a9;
+    color: #fff;
+    margin-bottom: 9px;
+    margin-top: 9px;
+    padding: 10px 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 3px solid #ff7a77;
+    position: relative;
+}
+.uab-setting-page-wrapper{
+	padding-right: 15px;
+    padding-left: 15px;
+}
+
+.uab-postion-wrapper .uab-inner-title{
+    line-height: 1.4;
+    padding-right: 30px;
+    vertical-align: top;
+    font-size: 18px;
+    font-weight: 700;
+    display: block;
+    padding-left: 30px;
+}
+.uab-custom-post-type-list-wrapper{
+    padding-left: 30px;
+    max-height: 200px;
+    overflow-y: auto;
+}
+.uab-content-wrapper input[type=number],
+.uab-content-wrapper input[type=text]{
+	width:50%;
+	min-height:35px;
+	border:1px solid #22a3a9;
+	border-radius:3px;
+}	
+.background-image-preview input[type=button]{
+	background: #22a3a9;
+    border-color: #22a3a9;
+    -webkit-box-shadow: 0 1px 0 #28b8bf;
+    box-shadow: 0 1px 0 #28b8bf;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #22a3a9, 1px 0 1px #22a3a9, 0 1px 1px #22a3a9, -1px 0 1px #22a3a9;
+    /* border-radius: 0; */
+    min-height: 35px;
+}
+.background-image-preview input[type=button]:focus,
+.background-image-preview input[type=button]:hover{
+	background: #28b8bf;
+    border-color: #28b8bf;
+    color: #fff;
+}
+/**/
+.wp-core-ui .uab_admin-general-bttn .button-primary,
+.wp-core-ui .uab_admin-general-bttn .button, 
+.wp-core-ui .uab_admin-general-bttn .button-secondary{
+	background:#22a3a9;
+	border-color:#22a3a9;
+	-webkit-box-shadow: 0 1px 0 #28b8bf;
+    box-shadow: 0 1px 0 #28b8bf;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #22a3a9, 1px 0 1px #22a3a9, 0 1px 1px #22a3a9, -1px 0 1px #22a3a9;
+    border-radius:0;
+}
+.wp-core-ui .uab_admin-general-bttn .button-primary.focus, 
+.wp-core-ui .uab_admin-general-bttn .button-primary.hover, 
+.wp-core-ui .uab_admin-general-bttn .button-primary:focus, 
+.wp-core-ui .uab_admin-general-bttn .button-primary:hover,
+.wp-core-ui .uab_admin-general-bttn .button-secondary:focus, 
+.wp-core-ui .uab_admin-general-bttn .button-secondary:hover, 
+.wp-core-ui .uab_admin-general-bttn .button.focus, 
+.wp-core-ui .uab_admin-general-bttn .button.hover, 
+.wp-core-ui .uab_admin-general-bttn .button:focus, 
+.wp-core-ui .uab_admin-general-bttn .button:hover{
+	background:#28b8bf;
+    border-color:#28b8bf;
+    color:#fff;
+}
+
+.wp-core-ui .uab-content-wrapper .button-secondary {
+    background: #22a3a9;
+    border-color: #22a3a9;
+    -webkit-box-shadow: 0 1px 0 #28b8bf;
+    box-shadow: 0 1px 0 #28b8bf;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px #22a3a9, 1px 0 1px #22a3a9, 0 1px 1px #22a3a9, -1px 0 1px #22a3a9;
+    border-radius: 0;
+}
+/*---------------------
+uab setting css end
+-----------------------*/
+/*-----------------------------
+uab profile setting css start
+-------------------------------*/
+.uab-profile-backend-wrapper .uab-profile-header h2{
+	padding:0;
+	color:#222;
+	font-size:14px;
+	font-weight:600;
+}
+.uab-profile-backend-wrapper .uab-profile-field{
+    position: relative;
+    padding-left: 230px;
+    margin: 20px 0;
+    font-size:12px;
+}
+.uab-profile-backend-wrapper .uab-profile-field label{
+	position: absolute;
+    width: 220px;
+    top: 0px;
+    left: 0;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #23282d;
+}
+.uab-profile-backend-wrapper  .uab-profile-recent-post-list{
+	margin-bottom:10px;
+}
+.uab-profile-backend-wrapper  .uab-profile-recent-post-list:last-child{
+	margin-bottom:0;
+}
+.uab-profile-backend-wrapper .uab-profile-field input[type=text],
+.uab-profile-backend-wrapper .uab-profile-field input[type=email],
+.uab-profile-backend-wrapper .uab-profile-field input[type=url]{
+	width:350px;
+	max-width:100%;
+	height:30px;
+}
+.uab-profile-backend-wrapper .uab-profile-field span.uab-info{
+	display:block;
+	font-size:11px;
+}
+.uab-profile-backend-wrapper .uab-profile-field label i,
+.uab-profile-backend-wrapper .uab-profile-field label svg{
+	width:20px;
+	text-align:center;
+	font-weight:700;
+	margin-right:10px;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs,
+.uab-profile-backend-wrapper .uab-backend-tabs ul,
+.uab-profile-backend-wrapper .uab-backend-tabs .ui-widget-header,
+.uab-profile-backend-wrapper .uab-backend-tabs ul li,
+.uab-profile-backend-wrapper  .ui-tabs .ui-tabs-nav li.ui-tabs-active,
+.uab-profile-backend-wrapper  .ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+	-webkit-border-radius:0;
+	border-radius:0;
+	background:none;
+	box-shadow:0 0 0;
+	border:0;
+	text-decoration:none;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.uab-profile-backend-wrapper .uab-variable-width-wrapper{
+    position: relative;
+    padding-right:85px;
+    padding-left: 10px;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul.ui-tabs-nav{
+	text-align: left;
+    position: relative;
+    padding: 0;
+    margin-bottom: -1px;
+    text-align: left;
+    position: relative;
+    padding: 0;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs .ui-tabs-panel {
+	border:1px solid #ccc;
+	width:100%;
+	display:inline-block;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li{
+    margin: 0;
+    float: left;
+    margin-bottom:-1px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs  .uab-profile-content-wrapper ul li{
+	width:100%;
+	display:block;
+	float:none;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs  .uab-profile-content-wrapper ul li .uab-profile-field{
+	border: 1px solid #ccc;
+    padding:10px;
+    padding-left: 240px;
+    display: inline-block;
+    box-sizing:border-box;
+    background-color:#fff;
+}
+.uab-profile-backend-wrapper .uab-social-outlets-wrapper{
+	margin-top:30px;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs  .uab-profile-content-wrapper ul li .uab-profile-field label{
+	padding-top: 18px;
+    padding-left: 10px;
+    cursor:move;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs  .uab-profile-content-wrapper ul li .uab-profile-field{
+	margin:5px 0;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li a{
+	text-align:center;
+	position:relative;
+	border: 1px solid #ccc;
+    padding: 5px 18px ! important;
+    font-size: 14px;
+    line-height: 24px;
+    background: #e5e5e5;
+    color: #555;
+    text-decoration:none;
+    box-shadow:0 0 0;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li:nth-child(1) a{
+	border-left: 1px solid #ccc;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li a,
+.uab-profile-backend-wrapper .uab-backend-tabs ul li a span{
+	display:inline-block;
+	vertical-align:middle;
+	margin:0;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li:focus,
+.uab-profile-backend-wrapper .uab-backend-tabs ul li a:focus{
+	outline:0;
+	-webkit-box-shadow:0 0 0;
+	box-shadow:0 0 0;
+}
+.uab-profile-backend-wrapper  .ui-tabs .ui-tabs-nav li.ui-tabs-active a{
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #f1f1f1;
+    color: #000;
+    margin-bottom: -1px;
+}
+.uab-profile-backend-wrapper  .ui-tabs .ui-tabs-nav li a{
+	width:98%;
+	overflow:hidden;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li a span{
+	width: 20px;
+    position: absolute;
+    top: 0px;
+    height:100%;
+    right: 0px;
+    background-image: none;
+    text-align: center;
+    text-indent: 0;
+    color: #222;
+    color: #555;
+    font-size: 11px;
+    background:#e5e5e5;
+}
+.uab-profile-backend-wrapper  .ui-tabs .ui-tabs-nav li.ui-tabs-active a span{
+	background:#f1f1f1;
+}
+.uab-profile-backend-wrapper .uab-backend-tabs ul li a span:before{
+    content: "\f00d";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    -webkit-transform:translateY(-50%);
+    transform:translateY(-50%);
+    left: 33%;
+    top:50%;
+    font-weight: 900;
+    cursor: pointer;
+}
+.uab-backend-tabs .uab-right-elements{
+	position: absolute;
+    top: 0;
+    bottom:-1px;
+    right: 0;
+}
+.uab-backend-tabs #uab-add-field,
+.uab-backend-tabs #uab-template-settings{
+	width:40px;
+	text-align: center;
+    font-size: 12px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    background: #e5e5e5;
+    color: #777;
+    border-radius: 0;
+    height:100%;
+    border: 1px solid #ccc;
+    position:relative;
+    cursor:pointer;
+}
+.uab-backend-tabs #uab-add-field{
+    float:left;
+    margin:0;
+}
+.uab-backend-tabs #uab-template-settings{
+    float: left;
+    margin-right: 1px;
+}
+.uab-backend-tabs #uab-template-settings i{
+	position:absolute;
+	left:50%;
+	top:50%;
+	-webkit-transform:translate(-50%, -50%);
+	transform:translate(-50%, -50%);
+}
+/*-----------------------------
+uab profile setting css end
+-------------------------------*/
+/*---------------------
+checkbox css start
+----------------------*/
+.uab-slide-checkbox input[type="checkbox"]{
+    position: absolute;
+    margin-left: -9999px;
+    visibility: hidden;
+}
+.uab-slide-checkbox input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.uab-slide-checkbox input[type="checkbox"] + label {
+    padding: 2px;
+    width: 50px;
+    height: 20px;
+    background-color:#ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+.uab-slide-checkbox input[type="checkbox"] + label:before, 
+.uab-slide-checkbox input[type="checkbox"] + label:after {
+    display: block;
+    position: absolute;
+    content: "";
+}
+.uab-slide-checkbox input[type="checkbox"] + label:before {
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    right: 2px;
+    background-color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: background 0.4s;
+    -moz-transition: background 0.4s;
+    -o-transition: background 0.4s;
+    transition: background 0.4s;
+}
+.uab-slide-checkbox input[type="checkbox"] + label:after {
+    top: 4px;
+    left: 4px;
+    bottom: 4px;
+    width: 24px;
+    background-color:#ccc;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    -webkit-transition: margin 0.4s, background 0.4s;
+    -moz-transition: margin 0.4s, background 0.4s;
+    -o-transition: margin 0.4s, background 0.4s;
+    transition: margin 0.4s, background 0.4s;
+}
+.uab-slide-checkbox input[type="checkbox"]:checked + label,
+.uab-slide-checkbox input[type="checkbox"]:checked + label:after {
+    background-color: #22a3a9;
+}
+.uab-slide-checkbox input[type="checkbox"]:checked + label:after {
+	margin-left:18px;
+}
+/*another checkbox css start*/
+.uab-single-checkbox{
+    width: 20px;
+    position: relative;	
+}
+.uab-single-checkbox-wrap{
+	padding:10px 0;
+}
+.uab-single-checkbox,
+.uab-custom-post-type-list-wrapper .uab-info{
+	display:inline-block;
+}
+.uab-custom-post-type-list-wrapper .uab-info{
+	margin-left:7px;
+	font-size: 12px;
+    font-weight: 700;
+    text-transform:capitalize;
+}
+.uab-single-checkbox label{
+	cursor: pointer;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    border:2px solid #444;
+}
+.uab-single-checkbox label:after{
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 9px;
+    height: 5px;
+    background: transparent;
+    top: 2px;
+    left: 2px;
+    border: 3px solid #22a3a9;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.uab-single-checkbox input[type=checkbox] {
+    visibility: hidden;
+}
+.uab-single-checkbox input[type=checkbox]:checked + label:after {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+/*---------------------
+checkbox css end
+----------------------*/
+/*---------------------
+footer css start
+----------------------*/
+#wpfooter {
+    position:static; 
+    padding: 10px 20px; 
+    color: #555d66; 
+}
+/*---------------------
+footer css end
+----------------------*/
+/*-----------------------
+Select box css start
+------------------------*/
+.select-tab-wrapper .sbHolder,
+.uab-profile-field .sbHolder{
+    border: 1px solid #22a3a9;
+    min-height: 35px;
+    padding: 0 10px;
+    position: relative;
+    background: none;
+    width:50%;
+    font-size: 13px;
+    border-radius: 3px;
+}
+.uab-profile-field .sbHolder{
+	width:193px;
+}
+.select-tab-wrapper .sbToggle,
+.uab-profile-field .sbToggle{
+    display: block;
+    height: 100%;
+    outline: none;
+    position: absolute;
+    right: 1px;
+    top: 0;
+    width: 30px;
+    z-index: 999;
+    color:#22a3a9;
+}
+.select-tab-wrapper .sbToggle:focus,
+.uab-profile-field .sbToggle:focus{
+	outline:0;
+	border:0;
+	box-shadow: 0 0 0;
+}
+.select-tab-wrapper .sbHolder .sbSelector,
+.uab-profile-field .sbHolder .sbSelector{
+    line-height: 35px;
+}
+.select-tab-wrapper .sbSelector:link, 
+.select-tab-wrapper .sbSelector:visited, 
+.select-tab-wrapper .sbSelector:hover,
+.select-tab-wrapper .sbSelector:focus,
+.uab-profile-field .sbSelector:link, 
+.uab-profile-field .sbSelector:visited, 
+.uab-profile-field .sbSelector:hover,
+.uab-profile-field .sbSelector:focus{
+    color: #b2b2b2;
+    outline:0;
+    -webkit-box-shadow: 0 0 0;
+    box-shadow: 0 0 0;
+}
+.select-tab-wrapper .sbOptions a:link:hover, 
+.select-tab-wrapper .sbOptions a:visited:hover,
+.uab-profile-field .sbOptions a:link:hover, 
+.uab-profile-field .sbOptions a:visited:hover {
+    color: #eee;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+}
+.select-tab-wrapper .sbOptions,
+.uab-profile-field .sbOptions{
+    width: 100%;
+    background:#22a3a9;
+    left: 0;
+    right: 0;
+    top: 50px !important;
+    border-radius: 3px;
+    border-color:#22a3a9;
+    overflow-y: visible;
+    z-index: 999999;
+    max-height: auto !important;
+    border:0;
+}
+.select-tab-wrapper  .sbToggle:before,
+.uab-profile-field  .sbToggle:before{
+    content: '\f347';
+    position: absolute;
+    font-family: dashicons;
+    font-size: 13px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.select-tab-wrapper .sbOptions:before,
+.uab-profile-field .sbOptions:before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 12px 10px;
+    border-color: transparent transparent #22a3a9 transparent;
+    top: -10px;
+    right: 15px;
+}
+.select-tab-wrapper .sbOptions li,
+.uab-profile-field .sbOptions li{
+	padding:0;
+	margin:0;
+	outline:0;
+}
+.select-tab-wrapper .sbOptions a:focus,
+.select-tab-wrapper .sbOptions a:link, 
+.select-tab-wrapper .sbOptions a:visited ,
+.uab-profile-field .sbOptions a:focus,
+.uab-profile-field .sbOptions a:link, 
+.uab-profile-field .sbOptions a:visited {
+    color: #fff;
+    transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    outline:0;
+}
+.select-tab-wrapper .sbOptions li a,
+.uab-profile-field .sbOptions li a {
+    border-bottom: 1px solid #fff;
+    padding: 10px 10px;
+}
+.uab-profile-field .sbOptions{
+	background:#22a3a9 ! important;
+}
+.select-tab-wrapper .sbOptions li span,
+.uab-profile-field .sbOptions li span{	
+	color:#fff;
+	text-transform:uppercase;
+}
+/*-----------------------
+Select box css end
+------------------------*/
+/*-------------------------
+dialog box css start
+-------------------------*/
+.uab-tab-selection-dialog.ui-dialog {
+	border:0;
+}
+.uab-tab-selection-dialog .ui-widget-header{
+	background:transparent;
+	border:0;
+}
+.uab-tab-selection-dialog.ui-dialog .uab-tab-option,
+.uab-tab-selection-dialog.ui-dialog .ui-widget-content{
+	border-top:1px solid #ccc;
+}
+.uab-tab-selection-dialog.ui-dialog .uab-profile-field{
+	margin:10px 0;
+}
+.uab-tab-selection-dialog.ui-dialog .uab-profile-field label{
+	font-size:12px;
+	display:block;
+	margin-bottom:5px;
+}
+.uab-tab-selection-dialog.ui-dialog .ui-dialog-buttonset button{
+	padding:5px 10px;
+	font-size:12px;
+}
+/*-------------------------
+dialog box css end
+-------------------------*/
+/*-------------------------
+widget css start
+---------------------------*/
+.uab-widget-wrapper .uab-select-widget-wrapper .uab-field{
+	position:relative;
+	padding-left:100px;
+}
+.uab-widget-wrapper .uab-select-widget-wrapper .uab-field > label{
+	position:absolute;
+	top:50%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+	left:0;
+}
+.uab-widget-wrapper  .lists_widgets ul{
+	display:inline-block;
+	width:100%;
+	clear:both;
+	margin:0 -5px;
+}
+.uab-widget-wrapper  .lists_widgets ul li{
+	width:33.33%;
+	text-align:center;
+	padding:5px;
+	float:none;
+	display:inline-block;
+	margin-right:-4px;
+	vertical-align:top;
+}
+.uab-widget-wrapper  .lists_widgets ul li .widget-type-wrapper{
+	border:1px solid #ddd;
+	padding:10px;
+}
+.uab-widget-wrapper .uab_listed_widgets{
+	margin-top:20px;
+}
+.uab-widget-wrapper .widget_area .widget_title{
+	margin-top:10px;
+	margin-bottom:10px;
+}
+.uab-widget-wrapper .widget_right_action  a{
+	display:inline-block;
+	width:30px;
+	line-height:30px;
+	border:1px solid #ddd;
+	color:#777;
+	text-align:center;
+	cursor:pointer;
+}
+/*-------------------------
+widget css end
+---------------------------*/
+.uab-setting-page-wrapper-contain{
+	clear: both;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #22a3a9;
+    border-top: 0;
+    padding:20px;
+}
+.uab-setting-page-wrapper-contain ul{
+	list-style-type:square;
+	padding-left:15px;
+}
+.uab-setting-page-wrapper-contain table{
+	width:100%;
+	text-align:left;
+	margin:10px 0;
+}
+.uab-setting-page-wrapper-contain table tr:nth-of-type(1){
+		font-weight:bold;
+		font-size:14px;
+}
+.uab-setting-page-wrapper-contain .wpmm-col-one-third{
+		display:inline-block;
+		width:33.33%;
+		margin-right:-4px;
+		padding:0 20px;
+		text-align:center;
+		vertical-align:top;
+}
+.uab-setting-page-wrapper-contain ul.wpmm-about {
+		list-style:none;
+		padding-left:0;
+}
+.uab-setting-page-wrapper-contain ul.wpmm-about  li{
+	display:inline-block;
+}
+.uab-setting-page-wrapper-contain *{
+	max-width:100%;
+	word-break:normal;
+    padding: 5px;
+}
+.uab-setting-page-wrapper-contain tr:nth-child(odd) {
+    background-color: #f2f2f2;
+}
+/**/
+.wp-admin .theme-browser .theme .theme-name{
+	-webkit-box-sizing:initial;
+	box-sizing:initial;
+}
+.wp-admin .theme-browser .theme .theme-actions {
+    bottom: 11px;
+    right: 10px;
+    background:transparent;
+}
+/*--------------------------
+Responsive css start
+----------------------------*/
+@media only screen and (max-width:1140px){
+	.uab-setting-page-wrapper-contain .wpmm-col-one-third{
+			width:100%;
+			margin-right:0px;
+			margin-top:20px;
+			text-align:left;
+	}
+	.uab-setting-page-wrapper-contain .wpmm-col-one-third:nth-of-type(1){
+			margin-top:0px;
+	}
+}
+@media only screen and (max-width:768px){
+	.wp-core-ui .uab_admin-general-bttn .button-primary, .wp-core-ui .uab_admin-general-bttn .button, .wp-core-ui .uab_admin-general-bttn .button-secondary{
+		margin:5px;
+	}
+	.uab-settings-header-wrapper-main-wrap .uab-settings-header-title,
+	.uab-header-social-link{
+		float:none;
+	}
+	ul.uab-tabs li:after{
+		content:none;
+	}
+	ul.uab-tabs li{
+		border:1px solid #525252;
+	}
+	.uab-content-wrapper input[type=number], 
+	.uab-content-wrapper input[type=text],
+	.uab-content-wrapper textarea,
+	.select-tab-wrapper .sbHolder, .uab-profile-field .sbHolder{
+		width:100%;
+	}
+	.uab-label-info-wrap{
+		padding:0 10px 0 0;
+	}
+	.uab-profile-backend-wrapper .uab-profile-field,
+	.uab-postion-wrapper .uab-inner-title{
+		padding-left:0;
+	}
+	.uab-profile-backend-wrapper .uab-profile-field label {
+	    position:relative;
+	    width:100%;
+	    display:block;
+	    top: 0px;
+	    left: 0;
+	    margin-bottom:7px;
+	}
+	.uab-profile-backend-wrapper .uab-backend-tabs  .uab-profile-content-wrapper ul li .uab-profile-field{
+		padding-left:7px;
+	}
+	.uab-profile-backend-wrapper .uab-backend-tabs  .uab-profile-content-wrapper ul li .uab-profile-field label{
+		padding-left:0;
+	}
+	.uab-profile-backend-wrapper .uab-backend-tabs ul li{
+		margin-left:0;
+		padding:0;
+	}
+	.uab-profile-backend-wrapper .uab-profile-field input[type=text], .uab-profile-backend-wrapper .uab-profile-field input[type=email], .uab-profile-backend-wrapper .uab-profile-field input[type=url]{
+		width:100%;
+	}
+}
+@media only screen and (max-width:640px){
+	.uab-content-wrapper{
+		display:block;
+	}
+	.uab-content-wrapper > div {
+	    width:100%;
+	    display:block;
+	}
+	ul.uab-tabs li{
+		width:100%;
+	}
+}
+/*since 1.0.4 color picker*/
+input.uab-color-picker.uab-primary-color-picker.wp-color-picker {
+    min-height: 25px;
+}
+
+/*Since 1.0.5*/
+.uab-right-elements .svg-inline--fa{
+   height: 2.5em; 
+}
+
+/* More Stuff Social Icons*/
+ul.wpmm-about.wpmm-unstyled li a:active, ul.wpmm-about.wpmm-unstyled li a:focus {
+    background: none;
+    border: none;
+    box-shadow: none;
+}

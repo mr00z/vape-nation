@@ -1,0 +1,772 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Ultimate Author Box Lite\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-06-18 05:10+0000\n"
+"PO-Revision-Date: 2017-06-18 05:31+0000\n"
+"Last-Translator: Sunil Bajracharya <sunil@access-keys.com>\n"
+"Language-Team: Nepali\n"
+"Language: ne-NP\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ultimate-author-box-lite.php:187
+msgid "Settings"
+msgstr ""
+"\n"
+"सेटिङहरू"
+
+#: ultimate-author-box-lite.php:188
+msgid "Support"
+msgstr ""
+"\n"
+"समर्थन"
+
+#. Name of the plugin
+#: ultimate-author-box-lite.php:200 ultimate-author-box-lite.php:200
+msgid "Ultimate Author Box Lite"
+msgstr ""
+
+#: ultimate-author-box-lite.php:212 ultimate-author-box-lite.php:212
+msgid "How to use"
+msgstr ""
+"\n"
+"कसरी प्रयोग गर्ने"
+
+#: ultimate-author-box-lite.php:223 ultimate-author-box-lite.php:223
+msgid "About"
+msgstr ""
+"\n"
+"बारेमा"
+
+#: ultimate-author-box-lite.php:310
+msgid "Sorry! The Author has not filled his profile."
+msgstr ""
+"\n"
+"माफ गर्नुहोस्! लेखक आफ्नो प्रोफाइल भरिएको छैन।"
+
+#: ultimate-author-box-lite.php:556
+msgid ""
+"Note: The Ultimate Author Box is installed but you do not have the "
+"permission to configure it. Please contact the site Admin to have access to "
+"your AuthorBox."
+msgstr ""
+"\n"
+"नोट: परम लेखक बक्स स्थापित छ तर तपाईं यसलाई कन्फिगर गर्न अनुमति छैन। कृपया "
+"आफ्नो AuthorBox पहुँच साइट व्यवस्थापक सम्पर्क गर्नुहोस्।"
+
+#: ultimate-author-box-lite.php:593
+msgid "Show Author Box in this post"
+msgstr "यो पोस्ट मा लेखक बक्स शो"
+
+#: ultimate-author-box-lite.php:595
+msgid "Yes"
+msgstr ""
+"\n"
+"हो"
+
+#: ultimate-author-box-lite.php:596
+msgid "No"
+msgstr "होइन"
+
+#: ultimate-author-box-lite.php:600
+msgid "Author Box Position"
+msgstr "लेखक बक्स स्थिति"
+
+#: ultimate-author-box-lite.php:602
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:16
+msgid "Default"
+msgstr ""
+"\n"
+"पूर्वनिर्धारित"
+
+#: ultimate-author-box-lite.php:603
+msgid "Top"
+msgstr "शीर्ष"
+
+#: ultimate-author-box-lite.php:604
+msgid "Bottom"
+msgstr "तल"
+
+#: inc/backend/uap-settings.php:12
+msgid "Settings saved successfully"
+msgstr "सेटिङहरू सफलतापूर्वक सुरक्षित"
+
+#: inc/backend/uap-settings.php:15
+msgid "Settings restored to default successfully"
+msgstr "सेटिङहरू सफलतापूर्वक पूर्वनिर्धारितमा पुनर्स्थापित"
+
+#: inc/backend/uap-settings.php:18
+msgid "Cache Cleared successfully"
+msgstr ""
+
+#: inc/backend/uap-settings.php:42
+msgid "General Settings"
+msgstr ""
+"\n"
+"सामान्य सेटिङहरू"
+
+#: inc/backend/uap-settings.php:43
+msgid "Permission Settings"
+msgstr "अनुमति सेटिङ"
+
+#: inc/backend/uap-settings.php:44
+msgid "Layout Settings"
+msgstr ""
+"\n"
+"लेआउट सेटिङ"
+
+#: inc/backend/uap-settings.php:45
+msgid "Custom Settings"
+msgstr "अनुकूलन सेटिङ"
+
+#: inc/backend/uap-settings.php:55 inc/backend/uap-settings.php:327
+#: inc/backend/ultimate-profile-settings.php:178
+msgid "Select Template"
+msgstr ""
+"\n"
+"टेम्पलेट चयन"
+
+#: inc/backend/uap-settings.php:58 inc/backend/uap-settings.php:332
+#: inc/backend/ultimate-profile-settings.php:180
+#: inc/backend/ultimate-profile-settings.php:224
+msgid "Template 1"
+msgstr "टेम्पलेट 1"
+
+#: inc/backend/uap-settings.php:59 inc/backend/uap-settings.php:333
+#: inc/backend/ultimate-profile-settings.php:181
+#: inc/backend/ultimate-profile-settings.php:225
+msgid "Template 2"
+msgstr "टेम्पलेट 2"
+
+#: inc/backend/uap-settings.php:60 inc/backend/uap-settings.php:334
+#: inc/backend/ultimate-profile-settings.php:182
+#: inc/backend/ultimate-profile-settings.php:226
+msgid "Template 3"
+msgstr "टेम्पलेट 3"
+
+#: inc/backend/uap-settings.php:61 inc/backend/uap-settings.php:335
+#: inc/backend/ultimate-profile-settings.php:183
+#: inc/backend/ultimate-profile-settings.php:227
+msgid "Template 4"
+msgstr "टेम्पलेट 4"
+
+#: inc/backend/uap-settings.php:62 inc/backend/uap-settings.php:336
+#: inc/backend/ultimate-profile-settings.php:184
+#: inc/backend/ultimate-profile-settings.php:228
+msgid "Template 5"
+msgstr "टेम्पलेट 5"
+
+#: inc/backend/uap-settings.php:94
+#: inc/backend/ultimate-profile-settings.php:264
+msgid "Primary Color"
+msgstr ""
+"\n"
+"प्राथमिक रंग"
+
+#: inc/backend/uap-settings.php:114
+#: inc/backend/ultimate-profile-settings.php:268
+msgid "Secondary Color"
+msgstr ""
+"\n"
+"माध्यमिक रंग"
+
+#: inc/backend/uap-settings.php:129
+msgid "Disable Ultimate Author Box"
+msgstr "परम लेखक बक्स असक्षम"
+
+#: inc/backend/uap-settings.php:130
+msgid "Disable Author Box in frontend entirely"
+msgstr ""
+"\n"
+"फ्रन्टइन्ड अक्षम लेखक बक्स सम्पूर्ण"
+
+#: inc/backend/uap-settings.php:142
+msgid "Choose place to show Author Box"
+msgstr ""
+"\n"
+"लेखक बक्स देखाउन स्थान चयन"
+
+#: inc/backend/uap-settings.php:146
+msgid "Show in Posts"
+msgstr ""
+"\n"
+"मा पोस्ट देखाउन"
+
+#: inc/backend/uap-settings.php:147
+msgid "Check to show Ultimate Author Box in Posts"
+msgstr ""
+"\n"
+"मा पोस्ट परम लेखक बक्स देखाउन जाँच"
+
+#: inc/backend/uap-settings.php:161
+msgid "Show in Pages"
+msgstr ""
+"\n"
+"पन्ने देखाउनुहोस्"
+
+#: inc/backend/uap-settings.php:162
+msgid "Check to show Ultimate Author Box in Pages"
+msgstr "पन्ने मा परम लेखक बक्स देखाउन जाँच"
+
+#: inc/backend/uap-settings.php:189
+msgid "Show in Custom Post Types"
+msgstr ""
+"\n"
+"अनुकूलन पोस्ट प्रकार देखाउनुहोस्"
+
+#: inc/backend/uap-settings.php:190
+msgid "Check to show Ultimate Author Box in Custom Post Type"
+msgstr "अनुकूलन पोस्ट प्रकार परम लेखक बक्स देखाउन जाँच"
+
+#: inc/backend/uap-settings.php:224
+msgid "Show Author Box at"
+msgstr ""
+"\n"
+"लेखक बक्स शो मा"
+
+#: inc/backend/uap-settings.php:228
+msgid "Top of Posts"
+msgstr "पोस्ट को शीर्ष"
+
+#: inc/backend/uap-settings.php:229
+msgid "Bottom of Posts"
+msgstr "पोस्ट को तल"
+
+#: inc/backend/uap-settings.php:230
+msgid "None"
+msgstr "कुनै पनि"
+
+#: inc/backend/uap-settings.php:236
+msgid "Hide Author Box if Author Biographical Info is empty"
+msgstr "लेखक लुकाउनुहोस् बक्स यदि लेखक जीवनी जानकारी खाली छ"
+
+#: inc/backend/uap-settings.php:237
+msgid "Check to hide Author Box if Author Biographical Info is empty"
+msgstr ""
+"\n"
+"लेखक बक्स लुकाउन लेखक जीवनी जानकारी खाली छ भने जाँच"
+
+#: inc/backend/uap-settings.php:252
+msgid "Show Default Biographical Info if empty"
+msgstr ""
+"\n"
+"पूर्वनिर्धारित शो जीवनी जानकारी भने खाली"
+
+#: inc/backend/uap-settings.php:253
+msgid "Check to Show Default Biographical Info if empty"
+msgstr ""
+"\n"
+"पूर्वनिर्धारित जीवनी जानकारी भने खाली देखाउन जाँच"
+
+#: inc/backend/uap-settings.php:268
+msgid "Default Author Box Message"
+msgstr ""
+"\n"
+"पूर्वनिर्धारित लेखक बक्स सन्देश"
+
+#: inc/backend/uap-settings.php:276
+msgid "Frontend link target options "
+msgstr ""
+"\n"
+"फ्रन्टइन्ड लिंक लक्ष्य विकल्पहरू"
+
+#: inc/backend/uap-settings.php:280
+msgid "New Page"
+msgstr ""
+"\n"
+"नयाँ पृष्ठ"
+
+#: inc/backend/uap-settings.php:281
+msgid "Same Page"
+msgstr ""
+"\n"
+"समान पृष्ठ"
+
+#: inc/backend/uap-settings.php:296
+msgid "Choose user roles"
+msgstr ""
+"\n"
+"प्रयोगकर्ता भूमिकाको चयन"
+
+#: inc/backend/uap-settings.php:297
+msgid "Select user roles for user fields access"
+msgstr "प्रयोगकर्ता क्षेत्रहरू पहुँच लागि प्रयोगकर्ता भूमिकाको चयन"
+
+#: inc/backend/uap-settings.php:331
+#: inc/backend/ultimate-profile-settings.php:179
+msgid "Default template"
+msgstr ""
+"\n"
+"पूर्वनिर्धारित टेम्पलेट"
+
+#: inc/backend/uap-settings.php:337
+#: inc/backend/ultimate-profile-settings.php:185
+msgid "Custom template"
+msgstr "अनुकूल टेम्प्लेट"
+
+#: inc/backend/uap-settings.php:338
+#: inc/backend/ultimate-profile-settings.php:186
+msgid "Custom Template"
+msgstr ""
+"\n"
+"अनुकूल टेम्प्लेट"
+
+#: inc/backend/uap-settings.php:373
+msgid "Enable Custom CSS Section"
+msgstr "अनुकूलन CSS धारा सक्षम"
+
+#: inc/backend/uap-settings.php:374
+msgid "Check to Enable Custom CSS Section"
+msgstr ""
+"\n"
+"अनुकूलन CSS धारा सक्षम गर्न जाँच"
+
+#: inc/backend/uap-settings.php:400
+msgid "Save Changes"
+msgstr ""
+"\n"
+"परिवर्तनहरू सुरक्षित गर्नुहोस"
+
+#: inc/backend/uap-settings.php:401
+msgid "Are you sure you want to restore default settings?"
+msgstr ""
+"\n"
+"तपाईं पूर्वनिर्धारित सेटिङ बहाल गर्न चाहनुहुन्छ निश्चित हुनुहुन्छ?"
+
+#: inc/backend/uap-settings.php:401
+msgid "Restore Default Settings"
+msgstr ""
+"\n"
+"पूर्वनिर्धारित सेटिङहरू पुनर्स्थापना"
+
+#: inc/backend/uap-settings.php:402
+msgid "Go to Profile Settings"
+msgstr ""
+"\n"
+"सेटिङ प्रोफाइल जाने"
+
+#: inc/backend/ultimate-profile-settings.php:4
+msgid "Please fill your Author Box"
+msgstr "कृपया आफ्नो लेखक बक्स भर्न"
+
+#: inc/backend/ultimate-profile-settings.php:12
+msgid "Ultimate Author Box Profile Settings"
+msgstr ""
+"\n"
+"परम लेखक बक्स प्रोफाइल सेटिङ"
+
+#: inc/backend/ultimate-profile-settings.php:13
+msgid "Please visit "
+msgstr ""
+"\n"
+"कृपया भ्रमण"
+
+#: inc/backend/ultimate-profile-settings.php:13
+msgid " for detail documentation."
+msgstr "विस्तार कागजात लागि।"
+
+#: inc/backend/ultimate-profile-settings.php:17
+msgid "Select New Tab Option"
+msgstr ""
+"\n"
+"नयाँ ट्याब विकल्प चयन"
+
+#: inc/backend/ultimate-profile-settings.php:21
+msgid "Select Tab Type"
+msgstr ""
+"\n"
+"ट्याब प्रकार चयन"
+
+#: inc/backend/ultimate-profile-settings.php:23
+msgid "Author posts"
+msgstr "लेखक पोस्ट"
+
+#: inc/backend/ultimate-profile-settings.php:24
+msgid "WYSIWYG Editor"
+msgstr "WYSIWYG सम्पादक"
+
+#: inc/backend/ultimate-profile-settings.php:29
+msgid "Tab Name"
+msgstr ""
+"\n"
+"ट्याब नाम"
+
+#: inc/backend/ultimate-profile-settings.php:30
+msgid "New tab"
+msgstr "नयाँ ट्याब"
+
+#: inc/backend/ultimate-profile-settings.php:40
+#: inc/frontend/uap-shortcode.php:78 inc/frontend/uap-shortcode.php:79
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:5
+#: inc/frontend/frontend-default/components/uab-component-title.php:9
+msgid "Author Details"
+msgstr ""
+"\n"
+"लेखक विवरण"
+
+#: inc/backend/ultimate-profile-settings.php:59
+msgid "+"
+msgstr ""
+
+#: inc/backend/ultimate-profile-settings.php:59
+msgid "New Tab"
+msgstr ""
+"\n"
+"नयाँ ट्याब"
+
+#: inc/backend/ultimate-profile-settings.php:66
+msgid "Template Settings"
+msgstr ""
+"\n"
+"टेम्पलेट सेटिङ"
+
+#: inc/backend/ultimate-profile-settings.php:92
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:11
+msgid "Author Posts"
+msgstr "लेखक पोस्ट"
+
+#: inc/backend/ultimate-profile-settings.php:97
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:4
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:16
+msgid "Frontend Tab Title"
+msgstr ""
+"\n"
+"फ्रन्टइन्ड ट्याब शीर्षक"
+
+#: inc/backend/ultimate-profile-settings.php:101
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:20
+msgid "Number of posts"
+msgstr ""
+"\n"
+"पोस्ट संख्या"
+
+#: inc/backend/ultimate-profile-settings.php:105
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:24
+msgid "Select Post Type"
+msgstr ""
+"\n"
+"पोस्ट प्रकार चयन"
+
+#: inc/backend/ultimate-profile-settings.php:107
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:26
+msgid "Latest Posts"
+msgstr ""
+"\n"
+"नवीनतम पोस्ट"
+
+#: inc/backend/ultimate-profile-settings.php:108
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:27
+msgid "Selective Posts"
+msgstr "छनौट पोस्ट"
+
+#: inc/backend/ultimate-profile-settings.php:112
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:32
+msgid "Posts to show"
+msgstr "देखाउन पोस्ट"
+
+#: inc/backend/ultimate-profile-settings.php:140
+#: inc/backend/uab-backend-tabs/uap-skeleton-tab.php:52
+#: inc/frontend/frontend-posts/uab-frontend-posts.php:81
+msgid "The User does not have any posts"
+msgstr ""
+"\n"
+"प्रयोगकर्ता कुनै पनि पोष्ट छैन"
+
+#: inc/backend/ultimate-profile-settings.php:174
+msgid "Enable Personal Template"
+msgstr "व्यक्तिगत टेम्पलेट सक्षम"
+
+#: inc/backend/ultimate-profile-settings.php:222
+msgid "Select Custom Template"
+msgstr "अनुकूलन टेम्पलेट चयन"
+
+#: inc/frontend/uap-shortcode.php:152
+msgid "No Tab Selected"
+msgstr "कुनै ट्याब चयन"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:9
+msgid "Profile Image Settings"
+msgstr ""
+"प्रोफाइल छवि सेटिङ\n"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:14
+msgid "Choose Image Type"
+msgstr ""
+"\n"
+"छवि प्रकार चयन"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:17
+msgid "Gravatar"
+msgstr ""
+"\n"
+"Gravatar"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:18
+msgid "Social Profile Image"
+msgstr "सामाजिक प्रोफाइल छवि"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:19
+msgid "Facebook"
+msgstr ""
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:20
+msgid "Instagram"
+msgstr ""
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:21
+msgid "Twitter"
+msgstr ""
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:22
+msgid "Custom Image"
+msgstr ""
+"\n"
+"अनुकूलन छवि"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:23
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:63
+msgid "Upload Image"
+msgstr ""
+"\n"
+"छवि अपलोड"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:29
+msgid "Facebook User ID"
+msgstr "फेसबुक प्रयोगकर्ता आईडी"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:33
+msgid "To get your Facebook User ID, Please go to "
+msgstr "आफ्नो Facebook प्रयोगकर्ता आईडी प्राप्त गर्न, कृपया जानुहोस्"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:33
+msgid " paste your Facebook Profile URL and click on Find Numeric ID."
+msgstr ""
+"\n"
+"आफ्नो Facebook प्रोफाइल URL टाँस्नुहोस् र संख्यात्मक आईडी फेला क्लिक "
+"गर्नुहोस्।"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:40
+msgid "Instagram Image ID"
+msgstr ""
+"\n"
+"इन्स्टाग्राम छवि आईडी"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:43
+msgid ""
+"To get your Instagram Image ID, Please open any image on Instagram you want "
+"in the single preview. If your image URL is https://www.instagram."
+"com/p/7FfbBpSOaC/ then 7FfbBpSOaC is your Instagram Image ID"
+msgstr ""
+"\n"
+"तपाईँको इन्स्टाग्राम छवि आईडी प्राप्त गर्न, तपाईंले एकल पूर्वावलोकन मा "
+"चाहनुहुन्छ इन्स्टाग्राम कुनै पनि छवि खोल्नुहोस्। आफ्नो छवि URL https://www."
+"instagram.com/p/7FfbBpSOaC/ छ भने 7FfbBpSOaC आफ्नो इन्स्टाग्राम छवि आईडी छ"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:50
+msgid "Twitter Username"
+msgstr ""
+"\n"
+"Twitter प्रयोगकर्ता नाम"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:53
+msgid ""
+"To get your Twitter Username, Please open your twitter profile. If your "
+"profile URL is https://twitter.com/apthemes  then apthemes is your Twitter "
+"username."
+msgstr ""
+"\n"
+"आफ्नो ट्विटर प्रयोगकर्ता नाम प्राप्त गर्न, कृपया आफ्नो ट्विटर प्रोफाइल "
+"खोल्नुहोस्। आफ्नो प्रोफाइल URL apthemes त्यसपछि https://twitter.com/apthemes "
+"छ भने आफ्नो ट्विटर प्रयोगकर्ता नाम छ।"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:61
+msgid "Upload Custom Image"
+msgstr ""
+"\n"
+"अनुकूलन छवि अपलोड"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:64
+msgid "Recommended image size is 200x200 px."
+msgstr "सिफारिस गरिएका छवि आकार 200x200 पिक्सेल छ।"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:66
+msgid "Image Preview:"
+msgstr ""
+"\n"
+"छवि पूर्वावलोकन:"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:75
+msgid "Choose Image Shape"
+msgstr ""
+"\n"
+"छवि आकृति चयन"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:77
+msgid "Square"
+msgstr "वर्ग"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:78
+msgid "Circular"
+msgstr ""
+"\n"
+"गोलाकार"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:85
+msgid "Company Information"
+msgstr ""
+"\n"
+"कम्पनी सूचना"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:89
+msgid "Company Name"
+msgstr "कम्पनी नाम"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:93
+msgid "Company URL"
+msgstr "कम्पनी URL"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:97
+msgid "Designation"
+msgstr "पद"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:101
+msgid "Separator"
+msgstr "विभाजक"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:103
+msgid ""
+"Degisnation [separator] Company Name. Example, Plugin Developer at "
+"AccessPress"
+msgstr ""
+"\n"
+"Degisnation [विभाजक] कम्पनी नाम। उदाहरणका लागि, प्लगइन AccessPress मा "
+"विकासकर्ता"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:106
+msgid "Phone Number"
+msgstr ""
+"\n"
+"फोन नम्बर"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:114
+msgid "Social Media Icons"
+msgstr "सामाजिक मिडिया प्रतीक"
+
+#: inc/backend/uab-backend-tabs/uap-defaut-tab.php:125
+msgid "Enter link for social media icon"
+msgstr ""
+"\n"
+"सामाजिक मिडिया प्रतिमा लागि लिंक प्रविष्ट"
+
+#: inc/backend/uab-boards/uap-about.php:25
+msgid ""
+"AccessPress Themes is a venture of Access Keys - who has developed hundreds "
+"of Custom WordPress themes and plugins \n"
+"            \tfor its clients over the years. "
+msgstr ""
+"अनुकूलन WordPress विषयवस्तुहरू र प्लगइन सयौं विकसित गरेको छ जो - "
+"विषयवस्तुहरू AccessPress पहुँच कुञ्जीहरू एक उद्यम छ\n"
+"            वर्षौंदेखि यसको ग्राहकहरु लागि।"
+
+#: inc/backend/uab-boards/uap-about.php:28
+msgid ""
+" - is an awesome way to represent your post authors. Add author box to your "
+"post to give identity to your post author. Add extra tabs with the authors "
+"posts and custom content."
+msgstr ""
+"\n"
+"- आफ्नो पोस्ट लेखक प्रतिनिधित्व गर्न एक उत्कृष्ट तरिका हो। तपाईंको पोस्ट "
+"लेखक पहिचान दिन आफ्नो पोस्ट गर्न लेखक बक्स थप्नुहोस्। लेखक पोस्ट र अनुकूलन "
+"सामग्री अतिरिक्त ट्याबहरू थप्नुहोस्।"
+
+#: inc/backend/uab-boards/uap-about.php:30
+msgid "Please visit our product page for more details here:"
+msgstr ""
+"\n"
+"कृपया थप विवरण यहाँ को लागि हाम्रो उत्पादन पृष्ठमा जानुहोस्:"
+
+#: inc/backend/uab-boards/uap-about.php:35
+msgid "Please visit our demo page here:"
+msgstr ""
+"\n"
+"कृपया यहाँ हाम्रो डेमो पृष्ठ जानुहोस्:"
+
+#: inc/backend/uab-boards/uap-about.php:41
+msgid "Plugin documentation can be found here:"
+msgstr ""
+"\n"
+"प्लगइन दस्तावेज यहाँ पाउन सकिन्छ:"
+
+#: inc/backend/uab-boards/uap-about.php:53
+msgid "AccessPress Social Icons"
+msgstr ""
+"\n"
+"AccessPress सामाजिक प्रतीक"
+
+#: inc/backend/uab-boards/uap-about.php:98
+msgid "Get in touch"
+msgstr ""
+"\n"
+"स्पर्श मा प्राप्त"
+
+#: inc/backend/uab-boards/uap-about.php:99
+msgid "If you have any question/feedback, please get in touch:"
+msgstr ""
+"\n"
+"तपाईं कुनै पनि प्रश्न / प्रतिक्रिया छ भने कृपया स्पर्श मा प्राप्त:"
+
+#: inc/backend/uab-boards/uap-about.php:111
+msgid "Get social"
+msgstr "सामाजिक प्राप्त"
+
+#: inc/backend/uab-boards/uap-about.php:112
+msgid ""
+"Get connected with us on social media. Facebook is the best place to find "
+"updates on our themes/plugins: "
+msgstr ""
+"\n"
+"हाम्रो साथ जडान गर्नुहोस् सामाजिक मिडियामा। फेसबुक हाम्रो विषयवस्तुहरू / "
+"प्लगइन मा अद्यावधिक फेला पार्न सबै भन्दा राम्रो ठाउँ छ:"
+
+#: inc/frontend/frontend-posts/uab-frontend-posts.php:52
+msgid "Read more..."
+msgstr ""
+"\n"
+"थप पढ्नुहोस्..."
+
+#: inc/frontend/frontend-default/components/uab-component-social.php:8
+msgid "follow me"
+msgstr ""
+"\n"
+"मलाई पिछा गर्नुहोस्"
+
+#: inc/frontend/frontend-posts/components/uab-post-author.php:5
+msgid "By"
+msgstr "द्वारा"
+
+#. Description of the plugin
+msgid ""
+"Ultimate Author Box Lite is a plugin that allows you to add additional "
+"information about the author in your Post, Page and Custom Post Type as a "
+"default option or through use of shortcode."
+msgstr ""
+"\n"
+"परम लेखक बक्स लाइट भनेर पूर्वनिर्धारित विकल्प वा shortcode प्रयोग मार्फत "
+"तपाईंको पोस्ट, पृष्ठ र अनुकूलन पोस्ट प्रकार मा लेखकको बारेमा थप जानकारी थप्न "
+"अनुमति दिन्छ प्लगइन छ।"
+
+#. URI of the plugin
+msgid "accesspressthemes.com/wordpress-plugins/ultimate-author-box-lite"
+msgstr ""
+
+#. Author of the plugin
+msgid "AccessPress Themes"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "http://accesspressthemes.com"
+msgstr ""
