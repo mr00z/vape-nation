@@ -16,3 +16,5 @@ wordpress/wp-content/themes/twentysixteen/
 /sitemap.xml
 /sitemap.xml.gz
 
+/sync_plugin/master_config.ini
+/sync_plugin/slave_config.ini
