@@ -25,7 +25,7 @@ class SlaveDB:
 
     @backoff
     def get_orders(self):
-        logger.debug('[SLAVE] Fetching not processed orders')
+        logger.debug('[SLAVE] Fetching orders')
         response = self.wcapi.get("orders?per_page=100")
         if not response.ok:
             raise RestException(response.json())
@@ -61,10 +61,10 @@ class SlaveDB:
         return products
 
     @backoff
-    def update_order_status(self, order, status):
-        logger.debug('[SLAVE] Updating order: id={}'.format(order['id']))
+    def update_order_status(self, order_id, status):
+        logger.debug('[SLAVE] Updating order: id={}'.format(order_id))
         data = {"status": status}
-        response = self.wcapi.put("orders/{}".format(order['id']), data)
+        response = self.wcapi.put("orders/{}".format(order_id), data)
         if not response.ok:
             raise RestException(response.json())
         return response.json()
@@ -73,6 +73,7 @@ class SlaveDB:
     def update_item_stock(self, item, stock):
         if item.get('variation_id', False):
             return self.update_item_variation_stock(item, stock)
+        return False
         logger.debug('[SLAVE] Updating product: {} stock: {}'.format(
             item['id'], stock))
         data = {"stock_quantity": stock}
@@ -116,9 +117,14 @@ class MasterDB:
             cursor.execute(query)
             return cursor.fetchall()
 
-    def update_item_stock(self, id, stock):
-        logger.debug('[MASTER] Updating product: sku={}'.format(id))
+    def update_item_stock(self, item, stock):
+        logger.debug('[MASTER] Updating product: sku={}'.format(item['sku']))
+        params = {
+            'sku': item['sku'],
+            'stock': stock
+        }
         with transaction(self.conn, logger) as cursor:
-            query = "UPDATE product SET Stock=%(stock)s WHERE productid=%(id)s"
-            cursor.execute(query, (stock, id))
-            return cursor.fetchall()
+            query = """UPDATE product SET "Stock"=%(stock)s
+                       WHERE "ProductId"=%(sku)s"""
+            cursor.execute(query, params)
+        self.conn.commit()

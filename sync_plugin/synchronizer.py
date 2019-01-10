@@ -40,36 +40,65 @@ class Synchronizer:
         self.master = master
         self.slave = slave
 
+    def fetch_items(self):
+        self.raw_master_items = self.master.get_items()
+        self.raw_slave_items = self.slave.get_items()
+        self.raw_slave_orders = self.slave.get_orders()
+
+    def process_items(self):
+        self.master_items = fun.process_master_items(self.raw_master_items)
+        self.slave_items = fun.process_slave_items(self.raw_slave_items)
+        self.slave_items = fun.get_relevant_items(
+            self.slave_items, self.master_items)
+
+    def process_orders(self):
+        self.slave_orders = fun.process_order_items(self.raw_slave_orders)
+        self.slave_orders = fun.get_relevant_orders(
+            self.slave_orders, self.slave_items)
+        self.order_ids = set([p['order_id'] for p in self.slave_orders])
+
+    def update_items(self):
+        for item in self.slave_items:
+            m_item = [i for i in self.master_items
+                      if i['sku'] == item['sku']][0]
+            new_stock = fun.calculate_stock(m_item, self.slave_orders)
+            self.slave.update_item_stock(item, new_stock)
+            self.master.update_item_stock(m_item, new_stock)
+
+    def update_orders(self):
+        for id in self.order_ids:
+            self.slave.update_order_status(id, 'completed')
+
     def run(self):
         logger.debug('#1/5 Fetching items...')
-        raw_master_items = self.master.get_items()
-        raw_slave_items = self.slave.get_items()
-        raw_slave_orders = self.slave.get_orders()
-        return False
+        self.fetch_items()
+        if not self.raw_master_items:
+            logger.info('No items in postgres!')
+            return None
+        if not self.raw_slave_items:
+            logger.info('No items in wordpress!')
+            return None
+        if not self.raw_slave_orders:
+            logger.info('No new orders!')
+            return None
 
         logger.debug('#2/5 Processing items...')
-        master_items = fun.process_master_items(raw_master_items)
-        slave_items = fun.process_slave_items(raw_slave_items)
-        slave_items = fun.get_relevant_items(slave_items, master_items)
+        self.process_items()
+        if not self.slave_items:
+            logger.info('No products in wordpress match with postgres!')
+            return None
 
         logger.debug('#3/5 Processing orders...')
-        slave_orders = fun.process_order_items(raw_slave_orders)
-        slave_orders = fun.get_relevant_orders(slave_orders, master_items)
+        self.process_orders()
+        if not self.slave_orders:
+            logger.info('No new orders!')
+            return None
 
-        # remove unused variables to free some memory
-        gc.collect()
-
+        gc.collect()  # remove unused variables to free some memory
         logger.debug('#4/5 Updating items...')
-        for item in master_items:
-            new_stock = fun.calculate_stock(item, slave_orders)
-            s_item = [i for i in slave_items if i['sku'] == item['id']]
-            self.slave.update_item_stock(s_item['sku'], new_stock)
-            self.master.update_item_stock(item['id'], new_stock)
-
+        self.update_items()
         logger.debug('#5/5 Updating orders...')
-        order_id_set = set([order['id'] for order in slave_orders])
-        for id in order_id_set:
-            self.slave.update_order_status(id, 'completed')
+        self.update_orders()
 
 
 def load_configs(slave_config, master_config):
