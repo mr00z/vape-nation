@@ -48,13 +48,13 @@ class Synchronizer:
     def process_items(self):
         self.master_items = fun.process_master_items(self.raw_master_items)
         self.slave_items = fun.process_slave_items(self.raw_slave_items)
-        self.slave_items = fun.get_relevant_items(
-            self.slave_items, self.master_items)
+        self.slave_items = \
+            fun.get_relevant_items(self.slave_items, self.master_items)
 
     def process_orders(self):
         self.slave_orders = fun.process_order_items(self.raw_slave_orders)
-        self.slave_orders = fun.get_relevant_orders(
-            self.slave_orders, self.slave_items)
+        self.slave_orders = \
+            fun.get_relevant_orders(self.slave_orders, self.slave_items)
         self.order_ids = set([p['order_id'] for p in self.slave_orders])
 
     def update_items(self):
@@ -62,15 +62,21 @@ class Synchronizer:
             m_item = [i for i in self.master_items
                       if i['sku'] == item['sku']][0]
             new_stock = fun.calculate_stock(m_item, self.slave_orders)
-            self.slave.update_item_stock(item, new_stock)
-            self.master.update_item_stock(m_item, new_stock)
+            if new_stock < 0:
+                # Increase quantity of this product in postgres
+                err = 'ERROR: Invalid stock={} for item sku={}'
+                raise Exception(err.format(new_stock, item['sku']))
+            if item['stock_quantity'] != new_stock:
+                self.slave.update_item_stock(item, new_stock)
+            if m_item['stock_quantity'] != new_stock:
+                self.master.update_item_stock(m_item, new_stock)
 
     def update_orders(self):
         for id in self.order_ids:
             self.slave.update_order_status(id, 'completed')
 
     def run(self):
-        logger.debug('#1/5 Fetching items...')
+        logger.info('#1/5 Fetching items...')
         self.fetch_items()
         if not self.raw_master_items:
             logger.info('No items in postgres!')
@@ -79,25 +85,25 @@ class Synchronizer:
             logger.info('No items in wordpress!')
             return None
         if not self.raw_slave_orders:
-            logger.info('No new orders!')
-            return None
+            # proceed to sync slave with master (without orders)
+            logger.debug('No new orders!')
 
-        logger.debug('#2/5 Processing items...')
+        logger.info('#2/5 Processing items...')
         self.process_items()
         if not self.slave_items:
             logger.info('No products in wordpress match with postgres!')
             return None
 
-        logger.debug('#3/5 Processing orders...')
+        logger.info('#3/5 Processing orders...')
         self.process_orders()
         if not self.slave_orders:
-            logger.info('No new orders!')
-            return None
+            # proceed to sync slave with master (without orders)
+            logger.debug('No relevant orders!')
 
         gc.collect()  # remove unused variables to free some memory
-        logger.debug('#4/5 Updating items...')
+        logger.info('#4/5 Updating items...')
         self.update_items()
-        logger.debug('#5/5 Updating orders...')
+        logger.info('#5/5 Updating orders...')
         self.update_orders()
 
 
@@ -113,7 +119,7 @@ def load_configs(slave_config, master_config):
 
 def main(slave_config, master_config):
     start_time = datetime.datetime.now()
-    logger.debug('Starting synchronizer')
+    logger.info('Starting synchronizer')
     master_config, slave_config = load_configs(slave_config, master_config)
     master = MasterDB(
         host=master_config['host'],
@@ -129,7 +135,7 @@ def main(slave_config, master_config):
     Synchronizer(master, slave).run()
     del master
     end_time = datetime.datetime.now()
-    logger.debug('Synchronization complete!')
+    logger.info('Synchronization complete!')
     delta = (end_time - start_time).total_seconds()
     logger.debug('Duration: {}s'.format(delta))
 

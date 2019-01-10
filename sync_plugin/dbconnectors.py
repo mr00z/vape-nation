@@ -31,7 +31,9 @@ class SlaveDB:
             raise RestException(response.json())
         orders = response.json()
         # we are interested only in unresolved orders
-        return [obj for obj in orders if obj['status'] == 'processing']
+        orders = [obj for obj in orders if obj['status'] == 'processing']
+        logger.debug('[SLAVE] Fetched: {} orders'.format(len(orders)))
+        return orders
 
     @backoff
     def get_variation(self, id, variation):
@@ -58,6 +60,7 @@ class SlaveDB:
                 var = self.get_variation(product['id'], variation)
                 parsed_variations.append(var)
             product['variations'] = parsed_variations
+        logger.debug('[SLAVE] Fetched: {} products'.format(len(products)))
         return products
 
     @backoff
@@ -73,8 +76,7 @@ class SlaveDB:
     def update_item_stock(self, item, stock):
         if item.get('variation_id', False):
             return self.update_item_variation_stock(item, stock)
-        return False
-        logger.debug('[SLAVE] Updating product: {} stock: {}'.format(
+        logger.debug('[SLAVE] Updating product: id={} stock: {}'.format(
             item['id'], stock))
         data = {"stock_quantity": stock}
         response = self.wcapi.put("products/{}".format(item['id']), data)
@@ -115,10 +117,13 @@ class MasterDB:
         with transaction(self.conn, logger) as cursor:
             query = "SELECT * FROM product"
             cursor.execute(query)
-            return cursor.fetchall()
+            products = cursor.fetchall()
+        logger.debug('[MASTER] Fetched: {} products'.format(len(products)))
+        return products
 
     def update_item_stock(self, item, stock):
-        logger.debug('[MASTER] Updating product: sku={}'.format(item['sku']))
+        logger.debug('[MASTER] Updating product: sku={} stock: {}'.format(
+            item['sku'], stock))
         params = {
             'sku': item['sku'],
             'stock': stock
