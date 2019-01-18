@@ -1,2 +1,2 @@
 psycopg2
-woocommerce
+woocommerce==1.2.1
